@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ca">
+    <head>
+        <title>Wrapped 2023 Lladó</title>
+        <meta charset="UTF-8">
+		<meta http-equiv="refresh" content="20;url=llado4.html">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="stylellado.css" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body id="tercer">
+	<div class="click-area" onclick="redirectOnClick(event)"></div>
+	<div class="click-area2" onclick="redirectOnClick2(event)"></div>
+	<img src="img/ona3.png" class="ona1 ona13" />
+	<img src="img/ona3.png" class="ona2 ona23" />
+        <section id="part7">
+            <h2>Aquest any has socialitzat amb moltes persones</h2>
+        </section>
+		<section id="part8">
+			<p class="g">Ja que tens un cor que ni t’hi cap al pit!</p>
+		</section>
+		<section id="part9">
+            <h2>Persones amb les que hi passaries segles:</h2>
+        </section>
+		<div class="linia primera">
+			<h1>1</h1>
+			<img class="foto" src="img/mireia.jpg" />
+			<h2>Mireia Vilà Salarich</h2>
+		</div>
+		<div class="linia segona">
+			<h1>2</h1>
+			<img class="foto" src="img/ignazi.jpg" />
+			<h2>Ignasi Creus Estragués</h2>
+		</div>
+		<div class="linia tercera">
+			<h1>3</h1>
+			<img class="foto" src="img/nat.jpg" />
+			<h2>Josep Bernat Jordi Pascual Garcia</h2>
+		</div>
+		<div class="linia quarta">
+			<h1>4</h1>
+			<img class="foto" src="img/eze.jpg" />
+			<h2>Ezequiel Paul Eriam</h2>
+		</div>
+		<div class="linia cinquena">
+			<h1>5</h1>
+			<img class="foto" src="img/zapata.png" />
+			<h2>Maria Fernanda Zapata</h2>
+		</div>
+		
+	<img src="img/croses.png" class="croses" />
+	
+	<script>
+    function redirectOnClick(event) {
+        // Obtener la posición x del clic
+        const clickX = event.clientX;
+
+        // Obtener el ancho total de la ventana
+        const windowWidth = window.innerWidth;
+
+        // Definir un umbral para determinar la zona de clic (en este caso, la mitad derecha)
+        const threshold = windowWidth / 2;
+
+        // Redirigir solo si el clic ocurre en la parte derecha de la pantalla
+        if (clickX > threshold) {
+            // Cambiar la URL a tu enlace deseado
+            window.location.href = 'llado4.html';
+        }
+    }
+
+    function redirectOnClick2(event) {
+        // Obtener la posición x del clic
+        const clickX = event.clientX;
+
+        // Obtener el ancho total de la ventana
+        const windowWidth = window.innerWidth;
+
+        // Definir un umbral para determinar la zona de clic (en este caso, la mitad izquierda)
+        const threshold = windowWidth / 2;
+
+        // Redirigir solo si el clic ocurre en la parte izquierda de la pantalla
+        if (clickX < threshold) {
+            // Cambiar la URL a tu enlace deseado
+            window.location.href = 'llado2.html';
+        }
+    }
+</script>
+	
+    </body>
+</html>

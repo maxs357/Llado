@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ca">
+    <head>
+        <title>Wrapped 2023 Lladó</title>
+        <meta charset="UTF-8">
+		<meta http-equiv="refresh" content="15;url=llado3.html">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="stylellado.css" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body id="segon">
+	<div class="click-area" onclick="redirectOnClick(event)"></div>
+	<div class="click-area2" onclick="redirectOnClick2(event)"></div>
+	<img src="img/ona2.png" class="ona1 ona12" />
+	<img src="img/ona2.png" class="ona2 ona22" />
+        <section id="part4">
+            <h2>El 2023 ha set molt variat...</h2>
+        </section>
+		<section id="part5">
+			<p class="g">Has tingut un voltant de 43 personalitats</p>
+		</section>
+		<section id="part6">
+            <h2>Les teves personalitats més comunes:</h2>
+        </section>
+		<div id="parent">
+			<div class="item u">Nazi</div>
+			<div class="item dos">Anti Feminista</div>
+			<div class="item tres">Otaku Kawai UwU</div>
+			<div class="item quatre">Racista</div>
+			<div class="item cinc">Anti Furros</div>
+		</div>
+	<img src="img/pa1.png" class="pa1" />
+	<img src="img/pa2.png" class="pa2" />
+	<img src="img/pato.png" class="gat pato" />
+	
+	<script>
+    function redirectOnClick(event) {
+        // Obtener la posición x del clic
+        const clickX = event.clientX;
+
+        // Obtener el ancho total de la ventana
+        const windowWidth = window.innerWidth;
+
+        // Definir un umbral para determinar la zona de clic (en este caso, la mitad derecha)
+        const threshold = windowWidth / 2;
+
+        // Redirigir solo si el clic ocurre en la parte derecha de la pantalla
+        if (clickX > threshold) {
+            // Cambiar la URL a tu enlace deseado
+            window.location.href = 'llado3.html';
+        }
+    }
+
+    function redirectOnClick2(event) {
+        // Obtener la posición x del clic
+        const clickX = event.clientX;
+
+        // Obtener el ancho total de la ventana
+        const windowWidth = window.innerWidth;
+
+        // Definir un umbral para determinar la zona de clic (en este caso, la mitad izquierda)
+        const threshold = windowWidth / 2;
+
+        // Redirigir solo si el clic ocurre en la parte izquierda de la pantalla
+        if (clickX < threshold) {
+            // Cambiar la URL a tu enlace deseado
+            window.location.href = 'llado.html';
+        }
+    }
+</script>
+	
+    </body>
+</html>

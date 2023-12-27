@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ca">
+    <head>
+        <title>Wrapped 2023 Lladó</title>
+        <meta charset="UTF-8">
+		<meta http-equiv="refresh" content="15;url=llado2.html">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="stylellado.css" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body id="primer">
+	<div class="click-area" onclick="redirectOnClick(event)"></div>
+	<img src="img/mando.png" class="mando" />
+	<img src="img/ona1.png" class="ona1" />
+	<img src="img/ona1.png" class="ona2" />
+        <section id="part1">
+            <h1>Wrapped <span id="span">2023</span></h1> 
+            <h2>Lladó</h2>
+        </section>
+		<section id="part2">
+			<h2>Hola, Lladó</h2>
+		</section>
+		<section id="part3">
+			<p>Ja ha arribat el resum de l’any. Preparats, llestos... endavant!</p>
+		</section>
+	<img src="img/gat.png" class="gat" />
+	
+	<script>
+        function redirectOnClick(event) {
+            // Obtener la posición x del clic
+            const clickX = event.clientX;
+
+            // Obtener el ancho total de la ventana
+            const windowWidth = window.innerWidth;
+
+            // Definir un umbral para determinar la zona de clic (en este caso, la mitad derecha)
+            const threshold = windowWidth / 2;
+
+            // Redirigir solo si el clic ocurre en la parte derecha de la pantalla
+            if (clickX > threshold) {
+                // Cambiar la URL a tu enlace deseado
+                window.location.href = 'llado2.html';
+            }
+        }
+    </script>
+	
+    </body>
+</html>
